@@ -1,6 +1,6 @@
 {
   "name": "@godind/canvas-gauges",
-  "version": "2.1.11",
+  "version": "2.1.12",
   "description": "Minimalist HTML5 Canvas Gauges",
   "main": "gauge.min.js",
   "directories": {
@@ -16,7 +16,8 @@
     "commit": "npm run build && npm run doc && npm test && gulp build:prod && git add --all . && git commit",
     "toc": "markdown-toc -i README.md",
     "build:all": "npm run build && npm run doc && npm run test:headless && gulp build:prod",
-    "zip": "gulp gzip"
+    "zip": "gulp gzip",
+    "publish:all": "npm publish ./dist//all --access public"
   },
   "repository": {
     "type": "git",
