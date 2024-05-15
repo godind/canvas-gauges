@@ -1,4 +1,20 @@
-# HTML Canvas Gauges v2.1
+# HTML Canvas Gauges v2.2+
+This is a fork from from the original project. The project is not maintained
+anymore.
+
+This fork aims to fix known issues. I do not plan to improve the library but PRs are welcomed!
+
+## Fixes in v2.2.0
+* Crash caused by canvas context stack leak. Both Radial and Linear gauges leaked but Linear was severe. Tests after 24h with multiple reveal no leaks.
+* Bug with Radial animationTarget='plate' not working.
+* Animation frame not set to null causing leak.
+* Improved Destroy clean up.
+
+## New
+* Added Progress bar example pages to cover for fast animation scenarios.
+* Added npm script commands to facilitate dev. 
+
+# ORIGINAL - HTML Canvas Gauges v2.1+
 
 [![Build Status](https://travis-ci.org/Mikhus/canvas-gauges.svg?branch=master)](https://travis-ci.org/Mikhus/canvas-gauges) ![Test Coverage](https://rawgit.com/Mikhus/canvas-gauges/master/test-coverage.svg) ![Documentation Coverage](https://rawgit.com/Mikhus/canvas-gauges/master/docs-coverage.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://rawgit.com/Mikhus/canvas-gauges/master/LICENSE) [![run on repl.it](http://repl.it/badge/github/Mikhus/canvas-gauges)](https://repl.it/github/Mikhus/canvas-gauges)
 
