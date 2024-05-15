@@ -7,7 +7,7 @@ This fork aims to fix known issues. I do not plan to improve the library but PRs
 Package available on npm as @godind/canvas-gauges
 
 ## Fixes in v2.2.0
-* Crash caused by canvas context stack leak. Both Radial and Linear gauges leaked but Linear was severe. Tests after 24h with multiple reveal no leaks.
+* Crash caused by canvas context stack leak. Both Radial and Linear gauges leaked but Linear was severe. Tests after 24h with multiple gauges and fast updates reveal no leaks (context stack still returns to 0). This fix is a refactoring of context management.
 * Bug with Radial animationTarget='plate' not working.
 * Animation frame not set to null causing leak.
 * Improved Destroy clean up.
