@@ -1,6 +1,6 @@
 {
   "name": "@godind/canvas-gauges",
-  "version": "2.2.0",
+  "version": "2.2.1",
   "description": "Minimalist HTML5 Canvas Gauges",
   "main": "gauge.min.js",
   "directories": {
